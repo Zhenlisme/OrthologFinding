@@ -1,5 +1,5 @@
 # OrthologFinding
-This repository is for Ortholog finding between two different species.
+This repository is for Ortholog finding between two different species by lastal.
 usage: lftpip.v3.py [-h] -q QUERYGENOME -db DBDICT [-psl PSL] -t TARGETGENOME
                     -b ANOTATIONFILE [-sq SPLITQ] [-d OPTDIRECT] [-p PROCESS]
                     [-m RUNMEM]
