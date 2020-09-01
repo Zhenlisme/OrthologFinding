@@ -1,0 +1,32 @@
+# OrthologFinding
+This repository is for Ortholog finding between two different species.
+usage: lftpip.v3.py [-h] -q QUERYGENOME -db DBDICT [-psl PSL] -t TARGETGENOME
+                    -b ANOTATIONFILE [-sq SPLITQ] [-d OPTDIRECT] [-p PROCESS]
+                    [-m RUNMEM]
+
+To Run Liftover Program Automatically. Writen by Zhen Li at Jan, 4, 2020
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -q QUERYGENOME, --querygenome QUERYGENOME
+                        The query genome sequence which should be fasta
+                        format.
+  -db DBDICT, --dbdict DBDICT
+                        The db directory name.
+  -psl PSL, --psl PSL   Whether use the psl format file directly.
+  -t TARGETGENOME, --targetgenome TARGETGENOME
+                        The target genome sequence which should be fasta
+                        format.
+  -b ANOTATIONFILE, --anotationfile ANOTATIONFILE
+                        The anotation file which should be bed format.
+  -sq SPLITQ, --splitq SPLITQ
+                        The number that the query genome should be splited
+                        into
+  -d OPTDIRECT, --optdirect OPTDIRECT
+                        The destinated directory in where all of your output
+                        will be stored.
+  -p PROCESS, --process PROCESS
+                        The maximum process number that could run at the same
+                        time.
+  -m RUNMEM, --runmem RUNMEM
+                        The memory size(gb) that each task will be used.
