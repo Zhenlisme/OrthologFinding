@@ -141,7 +141,7 @@ class Doliftover():
         subprocess.run("chainSwap %s stdout|chainSort stdin %s"%(rbestchainf,sortrbestchainf),shell=True)
         ##Net those on xxx to get xxx-refd recipical best net
         rbestnetf2 = "_".join([self.tmarker, self.qmarker]) + ".rbest.net2"
-        subprocess.run("chainPreNet %s %s %s stdout|chainNet -minSpace=1 -minSpace=0 stdin %s %s stdout /dev/null |netSyntenic stdin %s"%\
+        subprocess.run("chainPreNet %s %s %s stdout|chainNet -minSpace=1 -minScore=0 stdin %s %s stdout /dev/null |netSyntenic stdin %s"%\
         (sortrbestchainf,self.tmarker + ".chromsize",self.qmarker + ".chromsize",self.tmarker + ".chromsize",self.qmarker + ".chromsize",rbestnetf2),shell=True)
         os.system("mkdir recip_chain/")
         subprocess.run("chainMergeSort %s|chainSplit %s stdin"%(sortrbestchainf,"recip_chain/"),shell=True)
